@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio pribadi Tegar Ardiansyah — Mahasiswa Teknik Informatika." />
-  <title>Portfolio Tegar Ardiansyah </title>
+  <meta name="description" content="--Tegar Ardiansyah--" />
+  <title>Portofolio Tegar Ardiansyah </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -19,18 +19,17 @@
       <a href="#about">Tentang</a>
       <a href="#certificates">Sertifikat</a>
       <a href="#portfolio">Portofolio</a>
-      <a href="#contact">Contact</a>
+      <a href="#contact">Kontak</a>
     </nav>
   </header>
 
   <main id="home">
     <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow">MAHASISWA TEKNIK INFORMATIKA</p>
-        <h1>Tegar<br><span>Ardiansyah.</span></h1>
+        <p class="portfolio-label">PORTOFOLIO</p>
+        <h1><i>Tegar</i><br><span>Ardiansyah.</span></h1>
         <p class="hero-text">
-          Membangun ide menjadi proyek digital melalui web, pemrograman, database,
-          dan data analytics.
+          <b>Turning ideas into digital solutions.</b>
         </p>
       </div>
 
@@ -38,7 +37,7 @@
         <div class="hero-ring ring-one"></div>
         <div class="hero-ring ring-two"></div>
         <div class="hero-portrait">
-          <img src="assets/profile.jpg" alt="Foto Tegar Ardiansyah" />
+          <img src="assets/assets.profile.jpg" alt="Foto" />
         </div>
         <div class="hero-tag">OPEN TO<br>OPPORTUNITIES</div>
       </div>
@@ -109,13 +108,13 @@
         </div>
         <div class="content-text">
           <p>
-            Saya Tegar Ardiansyah, mahasiswa Teknik Informatika Universitas Indraprasta PGRI.
-            Saya memiliki ketertarikan pada pengembangan aplikasi, pengolahan data, dan teknologi.
+            Saya Tegar Ardiansyah, mahasiswa Teknik Informatika di Universitas Indraprasta PGRI, 
+            dan lulusan SMK Daarussalam Jakarta (Otomatisasi Tata Kelola Perkantoran).
           </p>
           <p>
-            Saya terbiasa mengerjakan proyek menggunakan Python, Java, PHP, MySQL, HTML, CSS,
-            dan Google Colab. Saya senang mempelajari hal baru, bekerja secara terstruktur,
-            dan mengubah kebutuhan menjadi solusi digital yang sederhana.
+            Saya berpengalaman mengembangkan aplikasi dan mengolah data dengan Python, Java, PHP, MySQL, HTML,
+            dan CSS. Saya senang mempelajari teknologi baru, bekerja terstruktur, dan mengubah kebutuhan bisnis 
+            menjadi solusi digital yang sederhana dan efektif.
           </p>
           <div class="skill-pills">
             <span>Python</span><span>Java</span><span>PHP</span><span>MySQL</span><span>HTML & CSS</span><span>Data Analytics</span>
@@ -127,24 +126,37 @@
     <section id="certificates" class="content-section section-shell">
       <div class="section-label">02 — SERTIFIKAT</div>
       <div class="certificate-list">
-        <article class="certificate-item">
+        <article class="certificate-item" data-cert="cert1">
           <div><span class="mini-label">2023</span><h3>Intro to Data Analytics Mini Course</h3></div>
           <p>RevoU</p>
+          <span class="cert-hint">Klik untuk lihat sertifikat</span>
         </article>
-        <article class="certificate-item">
+        <article class="certificate-item" data-cert="cert2">
           <div><span class="mini-label">2022</span><h3>Sertifikat Praktik Kerja Lapangan</h3></div>
           <p>PT Jaya Konsultan Indonesia</p>
+          <span class="cert-hint">Klik untuk lihat sertifikat</span>
         </article>
-        <article class="certificate-item">
+        <article class="certificate-item" data-cert="cert3">
           <div><span class="mini-label">2023</span><h3>Sertifikat Kompetensi LSP</h3></div>
           <p>Otomatisasi Tata Kelola Perkantoran</p>
+          <span class="cert-hint">Klik untuk lihat sertifikat</span>
         </article>
-        <article class="certificate-item">
+        <article class="certificate-item" data-cert="cert4">
           <div><span class="mini-label">2023</span><h3>Peringkat ke-3 Lulusan Terbaik Jurusan OTKP</h3></div>
           <p>SMK Daarussalaam Jakarta</p>
+          <span class="cert-hint">Klik untuk lihat sertifikat</span>
         </article>
       </div>
     </section>
+
+    <!-- Modal untuk menampilkan sertifikat -->
+    <div id="cert-modal" class="cert-modal">
+      <div class="cert-modal-overlay"></div>
+      <div class="cert-modal-content">
+        <button class="cert-modal-close">&times;</button>
+        <img id="cert-image" src="" alt="Sertifikat" />
+      </div>
+    </div>
 
     <section id="portfolio" class="content-section section-shell">
       <div class="section-label">03 — PORTOFOLIO</div>
@@ -156,38 +168,51 @@
             Model LSTM untuk memprediksi harga penutupan BBCA berdasarkan data historis,
             kemudian menerjemahkannya menjadi sinyal BUY atau TIDAK BUY melalui aturan sederhana.
           </p>
-          <a class="project-link" href="https://colab.research.google.com/drive/17R1XZGJCWQVvDZsjvyKU3YsIcNLMNIYA?authuser=1" target="_blank" rel="noopener">Buka Google Colab ↗</a>
+          <a class="project-link" href="https://colab.research.google.com/drive/1E12eVBjyRJW5mieoF2InKq4ipH2Xnr5z#scrollTo=GbngzHoCekBw" target="_blank" rel="noopener">Buka Google Colab ↗</a>
         </article>
 
-        <article class="project-card">
-          <div class="project-topline"><span>02</span><span>JAVA / MYSQL</span></div>
-          <h3>Sistem Informasi Perpustakaan</h3>
-          <p>CRUD data buku, anggota, dan peminjaman menggunakan Java, NetBeans, dan MySQL.</p>
-          <span class="project-link muted">Project kuliah</span>
-        </article>
-
-        <article class="project-card">
-          <div class="project-topline"><span>03</span><span>JAVA SWING / MYSQL</span></div>
+        <article class="project-card" data-project="proj2">
+          <div class="project-topline"><span>02</span><span>JAVA SWING / MYSQL</span></div>
           <h3>Sistem Presensi & Penggajian Karyawan</h3>
-          <p>Mengelola karyawan, presensi, tunjangan, potongan, penggajian, dan laporan.</p>
-          <span class="project-link muted">Project kuliah</span>
+          <p>Mengelola karyawan, potongan, penggajian, dan laporan.</p>
+          <span class="project-link">Lihat Screenshot ↗</span>
         </article>
       </div>
     </section>
 
+    <!-- Modal untuk menampilkan project screenshot -->
+    <div id="project-modal" class="project-modal">
+      <div class="project-modal-overlay"></div>
+      <div class="project-modal-content">
+        <button class="project-modal-close">&times;</button>
+        <img id="project-image" src="" alt="Project Screenshot" />
+      </div>
+    </div>
+
     <section id="contact" class="content-section contact-section section-shell">
-      <div class="section-label">04 — CONTACT</div>
+      <div class="section-label">04 — KONTAK</div>
       <div class="contact-layout">
-        <div>
-          <h2>Let’s connect.</h2>
-          <p class="contact-note">Terbuka untuk komunikasi, kolaborasi, maupun kesempatan belajar dan berkembang.</p>
-        </div>
+        <h2>Let's connect.</h2>
         <div class="contact-links">
+          <a href="https://www.linkedin.com/in/tegar-ardiansyah-85959b347/" target="_blank" rel="noopener">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Tegar Ardiansyah</span>
+          </a>
           <a href="mailto:tegarardiansyah1105@gmail.com">
-            <span>Email</span><strong>tegarardiansyah1105@gmail.com</strong>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">tegarardiansyah1105@gmail.com</span>
+          </a>
+          <a href="https://wa.me/62895384529070" target="_blank" rel="noopener">
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-value">+62 895 384 529 070</span>
           </a>
           <a href="https://github.com/tegarardiansyah1105" target="_blank" rel="noopener">
-            <span>GitHub</span><strong>@tegarardiansyah1105</strong>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">@tegarardiansyah1105</span>
+          </a>
+          <a href="assets/CV_Tegar_Ardiansyah.pdf" download>
+            <span class="contact-label">CV/Resume</span>
+            <span class="contact-value">Download PDF ↓</span>
           </a>
         </div>
       </div>
@@ -196,7 +221,6 @@
 
   <footer class="site-footer section-shell">
     <span>© <span id="year"></span> Tegar Ardiansyah</span>
-    <span>Built with HTML · CSS · JavaScript</span>
   </footer>
 
   <script src="script.js"></script>
